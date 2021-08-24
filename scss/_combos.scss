@@ -1,0 +1,30 @@
+.section--izq {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.section--der {
+    @extend .section--izq;
+    justify-content: flex-end;
+}
+.tablasCombos {
+    border: solid;
+    border-radius: 30px;
+    margin: 1rem;
+    text-align: center;
+    background-color: lightyellow;
+    background: black;
+    td {
+        background-color: lightyellow;
+        width: 10em; }
+    ul {
+        list-style: none;
+        background: none; }
+    ul li {
+        background-color: lightyellow; }
+}
+.tablasCombos__imagen {
+    @include medida(30vh, 10vw);
+    border-radius: 20px;
+}

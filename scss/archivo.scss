@@ -1,0 +1,107 @@
+@mixin medida ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@import "colores.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    background:none;
+}
+
+/*Header*/
+.header {
+    color: darkgoldenrod;
+    font-size: 1cm;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    background: none;
+}
+.header__logo {
+    text-align: center;
+    @include medida(20%, 20%)
+}
+
+/*Index*/
+.carrusel__imagen {
+    @include medida(50vw, 90vh);
+    border-image: round;
+    padding: 10vh;
+}
+#carrusel {
+    padding: 25vw 10vh;
+    margin: 15vh 15vw;
+}
+.carrusel--fondo {
+    background: none;
+    background-color: none;
+}
+
+/*Etiquetas y prop para misma clase que aplica a dif. paginas*/
+body {
+    background: linear-gradient(rgb(231, 167, 46), lightyellow, orange);
+}
+.nav--font {
+    color: rgb(184, 134, 11);
+    font-family: 'Caveat', cursive;
+}
+h1 {
+    background: none;
+    font-weight: bolder;
+    font-size: 300%;
+    text-decoration: underline;
+    margin: 3rem;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+.section__article--font {
+    color: darkgoldenrod;
+    font-family: 'Dosis', sans-serif;
+    word-spacing: 1.7;
+}
+.fondoNone {
+    background: none;
+}
+
+/*Footer*/
+footer {
+    @include medida(100%, 15vh);
+    background: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1 20vh;
+    grid-template-areas: "linkeados fdp envios insta";
+    border-top: solid 1px black;
+    p {
+        background: none;
+        color: black;
+        border-right: solid 1px black;
+        font-size: small;
+        font-family: 'Caveat', cursive; }
+    a {
+        background: none;
+        text-decoration: none;
+        color: black;
+        grid-area: linkeados;
+        font-size: small;
+        font-family: 'Caveat', cursive; }
+}
+.footer__pago {
+    grid-area: fdp;
+}
+.footer__envios {
+    grid-area: envios;
+}
+.footer__ig {
+    grid-area: insta;
+}
+
+@import "combos.scss";
+@import "nosotros.scss";
+@import "contacto.scss";
+@import "mediaquery.scss";
+@import "404.scss";

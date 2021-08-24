@@ -1,0 +1,42 @@
+#nosotros__logo {
+    @include medida(30%, 50%)
+}
+#nosotros__div {
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1 100vh;
+    grid-template-areas: "secQs secQs asideQs";
+}
+#nosotros__section {
+    @include medida(60vw, 100vh);
+    display: inline-block;
+    border: solid 0.1em black;
+    margin: 1em;
+    padding: 1em;
+    overflow: scroll;
+    grid-area: secQs;
+}
+#iframeHomero {
+    @include medida(100%, 80vh);
+}
+#nosotros__aside {
+    @include medida(30vw, 100vh);
+    display: inline-block;
+    border: solid 0.1em black;
+    margin: 1em;
+    padding: 1em;
+    grid-area: asideQs;
+}
+.aside__img {
+    @include medida(25vw, 40vh);
+}
+.aside__img--oculta {
+    display: none;
+}
+.aside__p--hover:hover img:first-child {
+    display:none
+}
+.aside__p--hover:hover img:last-child{
+    display:inline-block
+}

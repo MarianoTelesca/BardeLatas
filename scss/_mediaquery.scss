@@ -1,0 +1,76 @@
+@media (max-width: 480px) {
+    .header {
+        position: relative;
+        top: 0%;
+        @include medida(100vw, 20vh);
+        font-size: 1rem;
+        text-align: center;
+    }
+    .header__titulo {
+        display: none;
+    }
+    .header__logo {
+        @include medida(40vw, 20vh);
+    }
+    .carrusel__imagen {
+        @include medida(80vw, 90vh);
+        border-image: round;
+    }
+    //nosotros.html
+    #nosotros__logo {
+        @include medida(40vw, 20vh)
+    }
+    #nosotros__div {
+        background: none;
+        display: grid;
+        grid-template-columns: 1 100vw;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "secQs" "asideQs";
+    }
+    #nosotros__section {
+        @include medida(90vw, 70vh);
+        overflow: scroll;
+        grid-area: secQs;
+    }
+    #iframeHomero {
+        display: none
+    }
+    #nosotros__aside {
+        @include medida(90vw, 70vh);
+        display: inline-block;
+        margin: 0.5em;
+        overflow: scroll
+    }
+    .aside__img {
+        @include medida(75vw, 60vh);
+    }
+    footer {
+        @include medida(100%, 10vh);
+        justify-self: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 720px) {
+    .header {
+        font-size: 1rem;
+        text-align: center;
+        position: relative;
+        top: 0%;
+        @include medida(100vw, 20vh);
+    }
+    .header__logo {
+        @include medida(10vw, 10vh);
+    }   
+    .carrusel__imagen {
+        @include medida(40vw, 50vh);
+    }
+    #nosotros__logo {
+        @include medida(10vw, 10vh);
+    }
+    footer {
+        @include medida(100%, 15vh);
+        justify-self: center;
+        text-align: center;
+    }
+}
