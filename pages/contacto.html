@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/archivo2.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">    
+    <title>BDL / Contactanos</title>
+    <meta name="description" content="Contactate con nosotros ante cualquier duda o pedido!">
+    <meta name="keywords" content="Formulario, Contacto, Contactanos, Mensaje">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="../imagenes/logo.jpeg" alt="logo de la página" class="header__logo"></a>
+        <p> BAR DE LATAS </p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav--font">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cervezas.html">Cervezas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./packs_combos.html">Packs y Combos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html" tabindex="-1">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <h1>CONTACTANOS!</h1>
+    <form action="" enctype="" method="" class="form" autocomplete="off">
+      <input type="text" name="nombre" class="form__input" id="nombre" placeholder="Nombre" required>  
+      <input type="text" name="apellido" class="form__input" id="apellido" placeholder="Apellido" required>
+      <input type="email" name="email" class="form__input" id="email" placeholder="Email" required>
+      <select name="edad" class="form__input" id="edad">
+        <option class="form__option" value="18-30">18-30 años</option>
+        <option class="form__option" value="31-45">31-45 años</option>
+        <option class="form__option" value="+46">+46 años</option>
+      </select>
+      <textarea name="Consulta" class="form__consulta" placeholder="Escriba su consulta aquí" required></textarea><br>
+      <button type="submit" class="form__boton" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+      <button type="reset" class="form__boton">Reset</button>
+    </form>
+    <section></section>
+    <aside></aside>
+    <footer>
+      <ul>
+          <li><a href="../index.html">Inicio</a></li>  
+          <li><a href="./cervezas.html">Cervezas</a></li>  
+          <li><a href="./packs_combos.html"> Packs y Combos </a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+      <ul class="footer__pago">
+         <li>Formas de Pago:</li>
+         <li>Transferencia</li>
+         <li>MercadoPago</li>
+         <li>Efectivo</li>
+      </ul> 
+      <ul class="footer__envios"><li>Envíos en CABA</li></ul>
+      <ul class="footer__ig"><li>Instagram @Bardelatas</li></ul>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
