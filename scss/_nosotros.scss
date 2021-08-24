@@ -33,6 +33,7 @@
 }
 .aside__img--oculta {
     display: none;
+    @include medida(25vw, 40vh);
 }
 .aside__p--hover:hover img:first-child {
     display:none

@@ -71,17 +71,12 @@ footer {
     background: none;
     color: rgb(0, 0, 0);
     text-align: center;
+    margin-top: 1em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1 20vh;
     grid-template-areas: "linkeados fdp envios insta";
     border-top: solid 1px black;
-    p {
-        background: none;
-        color: black;
-        border-right: solid 1px black;
-        font-size: small;
-        font-family: 'Caveat', cursive; }
     a {
         background: none;
         text-decoration: none;
@@ -89,6 +84,13 @@ footer {
         grid-area: linkeados;
         font-size: small;
         font-family: 'Caveat', cursive; }
+    ul {
+        list-style: none;
+        background: none;
+        color: black;
+        border-right: solid 1px black;
+        font-size: small;
+        font-family: 'Caveat', cursive;    }
 }
 .footer__pago {
     grid-area: fdp;

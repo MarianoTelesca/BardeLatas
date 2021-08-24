@@ -45,7 +45,7 @@
         @include medida(75vw, 60vh);
     }
     footer {
-        @include medida(100%, 10vh);
+        @include medida(100%, 25vh);
         justify-self: center;
         text-align: center;
     }
@@ -69,7 +69,7 @@
         @include medida(10vw, 10vh);
     }
     footer {
-        @include medida(100%, 15vh);
+        @include medida(100%, 20vh);
         justify-self: center;
         text-align: center;
     }
