@@ -1,30 +1,50 @@
-.section--izq {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+.combos__section--izq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    grid-template-areas: "foto article";
+    background-color: rgb(255, 255, 160);
+    padding: 1em;
+    margin: 0.5em;
 }
-.section--der {
-    @extend .section--izq;
-    justify-content: flex-end;
-}
-.tablasCombos {
-    border: solid;
-    border-radius: 30px;
-    margin: 1rem;
+.art--izq {
+    grid-area: article;
     text-align: center;
-    background-color: lightyellow;
-    background: black;
-    td {
-        background-color: lightyellow;
-        width: 10em; }
-    ul {
-        list-style: none;
-        background: none; }
-    ul li {
-        background-color: lightyellow; }
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 4em;
 }
-.tablasCombos__imagen {
-    @include medida(30vh, 10vw);
-    border-radius: 20px;
+.img--izq {
+    grid-area: foto;
+    @include medida(45vw, 75vh);
+}
+
+.combos__section--der {
+    @extend .combos__section--izq;
+    grid-template-areas: "art foti";
+    background-color: rgb(255, 192, 34);
+}
+.art--der {
+    grid-area: art;
+    text-align: center;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 4em;
+}
+.img--der {
+    grid-area: foti;
+    @include medida(45vw, 75vh);
+}
+
+
+.combos ul {
+    list-style: none;
+    text-align: center;
+}
+.combos h2 {
+    font-size: 2em;
+}
+.precio {
+    font-size: 1.5em;
+    align-content: end;
 }

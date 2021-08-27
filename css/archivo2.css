@@ -93,20 +93,14 @@ footer {
   grid-template-rows: 1 20vh;
   grid-template-areas: "linkeados fdp envios insta";
   border-top: solid 1px black; }
-  footer a {
+  footer a, footer ul {
     background: none;
     text-decoration: none;
     color: black;
     grid-area: linkeados;
     font-size: small;
-    font-family: 'Caveat', cursive; }
-  footer ul {
-    list-style: none;
-    background: none;
-    color: black;
-    border-right: solid 1px black;
-    font-size: small;
-    font-family: 'Caveat', cursive; }
+    font-family: 'Caveat', cursive;
+    list-style: none; }
 
 .footer__pago {
   grid-area: fdp; }
@@ -117,35 +111,53 @@ footer {
 .footer__ig {
   grid-area: insta; }
 
-.section--izq, .section--der {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start; }
+.combos__section--izq, .combos__section--der {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+  grid-template-areas: "foto article";
+  background-color: #ffffa0;
+  padding: 1em;
+  margin: 0.5em; }
 
-.section--der {
-  justify-content: flex-end; }
-
-.tablasCombos {
-  border: solid;
-  border-radius: 30px;
-  margin: 1rem;
+.art--izq {
+  grid-area: article;
   text-align: center;
-  background-color: lightyellow;
-  background: black; }
-  .tablasCombos td {
-    background-color: lightyellow;
-    width: 10em; }
-  .tablasCombos ul {
-    list-style: none;
-    background: none; }
-  .tablasCombos ul li {
-    background-color: lightyellow; }
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 4em; }
 
-.tablasCombos__imagen {
-  width: 30vh;
-  height: 10vw;
-  border-radius: 20px; }
+.img--izq {
+  grid-area: foto;
+  width: 45vw;
+  height: 75vh; }
+
+.combos__section--der {
+  grid-template-areas: "art foti";
+  background-color: #ffc022; }
+
+.art--der {
+  grid-area: art;
+  text-align: center;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 4em; }
+
+.img--der {
+  grid-area: foti;
+  width: 45vw;
+  height: 75vh; }
+
+.combos ul {
+  list-style: none;
+  text-align: center; }
+
+.combos h2 {
+  font-size: 2em; }
+
+.precio {
+  font-size: 1.5em;
+  align-content: end; }
 
 #nosotros__logo {
   width: 30%;
@@ -257,6 +269,41 @@ footer {
     width: 80vw;
     height: 90vh;
     border-image: round; }
+  .combos__section--izq, .combos__section--der {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto" "article";
+    padding: 1em;
+    margin: 0.5em; }
+  .art--izq {
+    grid-area: article;
+    text-align: center;
+    justify-content: stretch;
+    align-items: center;
+    padding: 1em; }
+  .img--izq {
+    justify-content: center;
+    grid-area: foto;
+    width: 85vw;
+    height: 35vh; }
+  .combos__section--der {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foti" "art";
+    padding: 1em;
+    margin: 0.5em; }
+  .art--der {
+    grid-area: art;
+    text-align: center;
+    justify-content: stretch;
+    align-items: center;
+    padding: 1em; }
+  .img--der {
+    grid-area: foti;
+    width: 85vw;
+    height: 35vh; }
   #nosotros__logo {
     width: 40vw;
     height: 20vh; }
@@ -264,11 +311,11 @@ footer {
     background: none;
     display: grid;
     grid-template-columns: 1 100vw;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 30vh 70vh;
     grid-template-areas: "secQs" "asideQs"; }
   #nosotros__section {
     width: 90vw;
-    height: 70vh;
+    height: 25vh;
     overflow: scroll;
     grid-area: secQs; }
   #iframeHomero {
@@ -280,8 +327,12 @@ footer {
     margin: 0.5em;
     overflow: scroll; }
   .aside__img {
-    width: 75vw;
-    height: 60vh; }
+    width: 70vw;
+    height: 50vh; }
+  .aside__img--oculta {
+    display: none;
+    width: 70vw;
+    height: 50vh; }
   footer {
     width: 100%;
     height: 25vh;

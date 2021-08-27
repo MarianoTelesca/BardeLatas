@@ -16,6 +16,48 @@
         @include medida(80vw, 90vh);
         border-image: round;
     }
+
+    //PACKS Y COMBOS
+    .combos__section--izq {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "foto" "article";
+        padding: 1em;
+        margin: 0.5em;
+    }
+    .art--izq {
+        grid-area: article;
+        text-align: center;
+        justify-content: stretch;
+        align-items: center;
+        padding: 1em;
+    }
+    .img--izq {
+        justify-content: center;
+        grid-area: foto;
+        @include medida(85vw, 35vh);
+    }
+    .combos__section--der {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "foti" "art";
+        padding: 1em;
+        margin: 0.5em;
+    }
+    .art--der {
+        grid-area: art;
+        text-align: center;
+        justify-content: stretch;
+        align-items: center;
+        padding: 1em;
+    }
+    .img--der {
+        grid-area: foti;
+        @include medida(85vw, 35vh);
+    }
+
     //nosotros.html
     #nosotros__logo {
         @include medida(40vw, 20vh)
@@ -24,11 +66,11 @@
         background: none;
         display: grid;
         grid-template-columns: 1 100vw;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 30vh 70vh;
         grid-template-areas: "secQs" "asideQs";
     }
     #nosotros__section {
-        @include medida(90vw, 70vh);
+        @include medida(90vw, 25vh);
         overflow: scroll;
         grid-area: secQs;
     }
@@ -42,7 +84,11 @@
         overflow: scroll
     }
     .aside__img {
-        @include medida(75vw, 60vh);
+        @include medida(70vw, 50vh);
+    }
+    .aside__img--oculta {
+        display: none;
+        @include medida(70vw, 50vh);
     }
     footer {
         @include medida(100%, 25vh);

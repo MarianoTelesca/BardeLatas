@@ -77,20 +77,14 @@ footer {
     grid-template-rows: 1 20vh;
     grid-template-areas: "linkeados fdp envios insta";
     border-top: solid 1px black;
-    a {
+    a, ul {
         background: none;
         text-decoration: none;
         color: black;
         grid-area: linkeados;
         font-size: small;
-        font-family: 'Caveat', cursive; }
-    ul {
-        list-style: none;
-        background: none;
-        color: black;
-        border-right: solid 1px black;
-        font-size: small;
-        font-family: 'Caveat', cursive;    }
+        font-family: 'Caveat', cursive;
+        list-style: none; }
 }
 .footer__pago {
     grid-area: fdp;
