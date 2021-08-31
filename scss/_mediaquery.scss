@@ -16,6 +16,24 @@
         @include medida(80vw, 90vh);
         border-image: round;
     }
+    .index__section--izq {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "foto" "article";
+    }
+    .index__img--izq {
+        @include medida(85vw, 35vh);
+    }    
+    .index__section--der {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "art" "foti";
+    }
+    .index__img--der {
+        @include medida(85vw, 35vh);
+    }
 
     //PACKS Y COMBOS
     .combos__section--izq {
@@ -23,8 +41,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "foto" "article";
-        padding: 1em;
-        margin: 0.5em;
     }
     .art--izq {
         grid-area: article;
@@ -43,8 +59,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "foti" "art";
-        padding: 1em;
-        margin: 0.5em;
     }
     .art--der {
         grid-area: art;
@@ -71,7 +85,7 @@
     }
     #nosotros__section {
         @include medida(90vw, 25vh);
-        overflow: scroll;
+        overflow: auto;
         grid-area: secQs;
     }
     #iframeHomero {
@@ -81,7 +95,7 @@
         @include medida(90vw, 70vh);
         display: inline-block;
         margin: 0.5em;
-        overflow: scroll
+        overflow: auto;
     }
     .aside__img {
         @include medida(70vw, 50vh);

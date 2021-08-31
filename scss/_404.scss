@@ -10,8 +10,7 @@
 #texto404 {
     border: solid 1 black;
     grid-area: texto404;
-    margin: 1em;
-    padding: 1em;
+    @include separacion(1em, 1em);
     p {
         text-align: center;
     }

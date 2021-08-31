@@ -4,8 +4,7 @@
     grid-template-rows: 1;
     grid-template-areas: "foto article";
     background-color: rgb(255, 255, 160);
-    padding: 1em;
-    margin: 0.5em;
+    @include separacion(0, 1em);
 }
 .art--izq {
     grid-area: article;
@@ -22,7 +21,7 @@
 .combos__section--der {
     @extend .combos__section--izq;
     grid-template-areas: "art foti";
-    background-color: rgb(255, 192, 34);
+    background-color: rgb(255, 204, 77);
 }
 .art--der {
     grid-area: art;

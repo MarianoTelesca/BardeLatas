@@ -1,0 +1,79 @@
+@mixin medida ($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin separacion ($margen, $padding) {
+    margin: $margen;
+    padding: $padding;
+}
+
+@import "colores.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    background:none;
+}
+
+body {
+    background: linear-gradient(rgb(231, 167, 46), lightyellow, rgb(231, 167, 46));
+}
+.nav--font {
+    color: rgb(184, 134, 11);
+    font-family: 'Caveat', cursive;
+}
+h1 {
+    background: none;
+    font-weight: bolder;
+    font-size: 300%;
+    font-family: 'Caveat', cursive;
+    text-decoration: underline;
+    text-align: center;
+    margin: 1.5rem;
+}
+.section__article--font {
+    color: black;
+    font-family: 'Dosis', sans-serif;
+    word-spacing: 1.7;
+}
+.fondoNone {
+    background: none;
+}
+
+/*Footer*/
+footer {
+    @include medida(100%, 15vh);
+    background:rgb(255, 217, 114);
+    text-align: center;
+    margin-top: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1 20vh;
+    grid-template-areas: "linkeados fdp info";
+    border: solid 1px black;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    a, ul {
+        background: none;
+        text-decoration: none;
+        color: black;
+        grid-area: linkeados;
+        font-size: small;
+        font-family: 'Caveat', cursive;
+        list-style: none; 
+        font-size: 0.8em;   }
+}
+.footer__pago {
+    grid-area: fdp;
+}
+.footer__info {
+    grid-area: info;
+}
+
+@import "index.scss";
+@import "combos.scss";
+@import "nosotros.scss";
+@import "contacto.scss";
+@import "mediaquery.scss";
+@import "404.scss";

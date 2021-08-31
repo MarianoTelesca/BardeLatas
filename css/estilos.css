@@ -27,37 +27,8 @@
   margin: 0;
   background: none; }
 
-/*Header*/
-.header {
-  color: darkgoldenrod;
-  font-size: 1cm;
-  text-align: center;
-  font-family: 'Caveat', cursive;
-  background: none; }
-
-.header__logo {
-  text-align: center;
-  width: 20%;
-  height: 20%; }
-
-/*Index*/
-.carrusel__imagen {
-  width: 50vw;
-  height: 90vh;
-  border-image: round;
-  padding: 10vh; }
-
-#carrusel {
-  padding: 25vw 10vh;
-  margin: 15vh 15vw; }
-
-.carrusel--fondo {
-  background: none;
-  background-color: none; }
-
-/*Etiquetas y prop para misma clase que aplica a dif. paginas*/
 body {
-  background: linear-gradient(#e7a72e, lightyellow, orange); }
+  background: linear-gradient(#e7a72e, lightyellow, #e7a72e); }
 
 .nav--font {
   color: darkgoldenrod;
@@ -67,13 +38,13 @@ h1 {
   background: none;
   font-weight: bolder;
   font-size: 300%;
+  font-family: 'Caveat', cursive;
   text-decoration: underline;
-  margin: 3rem;
   text-align: center;
-  font-family: 'Caveat', cursive; }
+  margin: 1.5rem; }
 
 .section__article--font {
-  color: darkgoldenrod;
+  color: black;
   font-family: 'Dosis', sans-serif;
   word-spacing: 1.7; }
 
@@ -84,15 +55,17 @@ h1 {
 footer {
   width: 100%;
   height: 15vh;
-  background: none;
-  color: black;
+  background: #ffd972;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 0.5em;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1 20vh;
-  grid-template-areas: "linkeados fdp envios insta";
-  border-top: solid 1px black; }
+  grid-template-areas: "linkeados fdp info";
+  border: solid 1px black;
+  position: relative;
+  left: 0;
+  bottom: 0; }
   footer a, footer ul {
     background: none;
     text-decoration: none;
@@ -100,16 +73,69 @@ footer {
     grid-area: linkeados;
     font-size: small;
     font-family: 'Caveat', cursive;
-    list-style: none; }
+    list-style: none;
+    font-size: 0.8em; }
 
 .footer__pago {
   grid-area: fdp; }
 
-.footer__envios {
-  grid-area: envios; }
+.footer__info {
+  grid-area: info; }
 
-.footer__ig {
-  grid-area: insta; }
+.carrusel__imagen {
+  width: 50vw;
+  height: 90vh;
+  border-image: round;
+  padding: 10vh; }
+
+#carrusel {
+  margin: 15vh 15vw;
+  padding: 25vw 10vh; }
+
+.carrusel--fondo {
+  background: none;
+  background-color: none; }
+
+.index__section--izq {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+  grid-template-areas: "foto article";
+  background-color: #ffffc7;
+  margin: 0;
+  padding: 1em; }
+
+.index__art--izq, .index__art--der {
+  grid-area: article;
+  text-align: center;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 4em; }
+
+.index__img--izq {
+  grid-area: foto;
+  width: 45vw;
+  height: 75vh; }
+
+.index__section--der {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+  margin: 0;
+  padding: 1em;
+  grid-template-areas: "art foti";
+  background-color: #f8d685; }
+
+.index__art--der {
+  grid-area: art; }
+
+.index__img--der {
+  grid-area: foti;
+  width: 45vw;
+  height: 75vh; }
+
+.index__combos h2 {
+  font-size: 2em; }
 
 .combos__section--izq, .combos__section--der {
   display: grid;
@@ -117,8 +143,8 @@ footer {
   grid-template-rows: 1;
   grid-template-areas: "foto article";
   background-color: #ffffa0;
-  padding: 1em;
-  margin: 0.5em; }
+  margin: 0;
+  padding: 1em; }
 
 .art--izq {
   grid-area: article;
@@ -134,7 +160,7 @@ footer {
 
 .combos__section--der {
   grid-template-areas: "art foti";
-  background-color: #ffc022; }
+  background-color: #ffcc4d; }
 
 .art--der {
   grid-area: art;
@@ -173,24 +199,23 @@ footer {
 #nosotros__section {
   width: 60vw;
   height: 100vh;
-  display: inline-block;
-  border: solid 0.1em black;
   margin: 1em;
   padding: 1em;
-  overflow: scroll;
+  display: inline-block;
+  border: solid 0.1em black;
   grid-area: secQs; }
 
 #iframeHomero {
-  width: 100%;
-  height: 80vh; }
+  width: 80%;
+  height: 60vh; }
 
 #nosotros__aside {
   width: 30vw;
   height: 100vh;
-  display: inline-block;
-  border: solid 0.1em black;
   margin: 1em;
   padding: 1em;
+  display: inline-block;
+  border: solid 0.1em black;
   grid-area: asideQs; }
 
 .aside__img {
@@ -269,13 +294,27 @@ footer {
     width: 80vw;
     height: 90vh;
     border-image: round; }
+  .index__section--izq {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto" "article"; }
+  .index__img--izq {
+    width: 85vw;
+    height: 35vh; }
+  .index__section--der {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "art" "foti"; }
+  .index__img--der {
+    width: 85vw;
+    height: 35vh; }
   .combos__section--izq, .combos__section--der {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "foto" "article";
-    padding: 1em;
-    margin: 0.5em; }
+    grid-template-areas: "foto" "article"; }
   .art--izq {
     grid-area: article;
     text-align: center;
@@ -291,9 +330,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "foti" "art";
-    padding: 1em;
-    margin: 0.5em; }
+    grid-template-areas: "foti" "art"; }
   .art--der {
     grid-area: art;
     text-align: center;
@@ -316,7 +353,7 @@ footer {
   #nosotros__section {
     width: 90vw;
     height: 25vh;
-    overflow: scroll;
+    overflow: auto;
     grid-area: secQs; }
   #iframeHomero {
     display: none; }
@@ -325,7 +362,7 @@ footer {
     height: 70vh;
     display: inline-block;
     margin: 0.5em;
-    overflow: scroll; }
+    overflow: auto; }
   .aside__img {
     width: 70vw;
     height: 50vh; }

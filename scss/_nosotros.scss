@@ -10,22 +10,19 @@
 }
 #nosotros__section {
     @include medida(60vw, 100vh);
+    @include separacion(1em, 1em);
     display: inline-block;
     border: solid 0.1em black;
-    margin: 1em;
-    padding: 1em;
-    overflow: scroll;
     grid-area: secQs;
 }
 #iframeHomero {
-    @include medida(100%, 80vh);
+    @include medida(80%, 60vh);
 }
 #nosotros__aside {
     @include medida(30vw, 100vh);
+    @include separacion(1em, 1em);
     display: inline-block;
     border: solid 0.1em black;
-    margin: 1em;
-    padding: 1em;
     grid-area: asideQs;
 }
 .aside__img {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/archivo2.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,31 +17,31 @@
     <meta name="keywords" content="Combos, Cerveza, Packs, Regalos, GiftBox">
 </head>
 <body>
-    <header class="header fondo-transparente">
-        <a href="../index.html"><img src="../imagenes/logo.jpeg" alt="logo de la página" class="header__logo"></a>
-        <p> BAR DE LATAS </p>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header></header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="./index.html">
+                <img src="../imagenes/logo.jpeg" alt="Logo" width="135" height="85">
+            </a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav--font">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./cervezas.html">Cervezas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./packs_combos.html">Packs y Combos</a>
+                <a class="nav-link active" aria-current="page" href="./packs_combos.html">Packs y Combos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contacto.html" tabindex="-1">Contacto</a>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -54,7 +54,7 @@
     <h1 class="fondo-transparente">Packs y Combos</h1>
     <div class="combos">
         <section class="combos__section--izq">
-            <img src="../imagenes/box1.jpeg" alt="" class="img--izq">
+            <img src="../imagenes/box1.jpeg" alt="Cajita de regalo con dos cervezas, una pinta y un juego dentro" class="img--izq">
             <article class="art--izq">
                 <h2> GIFT BOX </h2>
                 <p>Nunca te paso que le querés regalar algo a una persona porque si, o como agradecimiento (a una amistad, una pareja, un conocido), y no sabías qué? Este hermoso box de regalo es exactamente lo que buscas. Contiene:
@@ -68,7 +68,7 @@
             </article>
         </section>
         <section class="combos__section--der">
-            <img src="../imagenes/PackIpa.jpeg" alt="" class="img--der">
+            <img src="../imagenes/PackIpa.jpeg" alt="Pack de cuatro cervezas en lata estilo ipa" class="img--der">
             <article class="art--der">
                 <h2>PACK IPAS</h2>                
                 <p> Este pack es para la gente que es fanatica de las Indian Pale Ale (IPA). En el encontrará cuatro latas de cervezas IPAS maravillosas: 
@@ -83,7 +83,7 @@
             </article>
         </section>
         <section class="combos__section--izq">
-            <img src="../imagenes/PackRubias.jpeg" alt="" class="img--izq">
+            <img src="../imagenes/PackRubias.jpeg" alt="pack de cuatro latas de cervezas rubias" class="img--izq">
             <article class="art--izq">
                 <h2>PACK RUBIAS</h2>
                 <p> Este pack es para la gente que es fanatica de las cervezas rubias. En el encontrará cuatro latas de cervezas maravillosas: 
@@ -98,7 +98,7 @@
             </article>
         </section>
         <section class="combos__section--der">
-            <img src="../imagenes/PackRojas.jpg" alt="" class="img--der">
+            <img src="../imagenes/PackRojas.jpg" alt="pack de cuatro latas de cerveza estilo roja" class="img--der">
             <article class="art--der">
                 <h2>PACK ROJAS</h2>
                 <p> Este pack es para la gente que es fanatica de las cervezas rojas. En el encontrará cuatro latas de cervezas maravillosas: 
@@ -129,8 +129,12 @@
            <li>MercadoPago</li>
            <li>Efectivo</li>
         </ul> 
-        <ul class="footer__envios"><li>Envíos en CABA</li></ul>
-        <ul class="footer__ig"><li>Instagram @Bardelatas</li></ul>
+        <ul class="footer__info">
+            <li>Envíos en CABA</li>
+            <li>.</li>
+            <li>.</li>
+            <li>Instagram @Bardelatas</li>
+        </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
