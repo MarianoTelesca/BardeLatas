@@ -16,9 +16,9 @@
     <meta name="description" content="Elegí el combo de cervezas que más se ajuste a vos. Hay packs armados, o podes combinarlas como quieras!">
     <meta name="keywords" content="Combos, Cerveza, Packs, Regalos, GiftBox">
 </head>
-<body>
-    <header></header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<body class="container-fluid">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,10 +50,11 @@
             </form>
           </div>
         </div>
-    </nav>
-    <h1 class="fondo-transparente">Packs y Combos</h1>
-    <div class="combos">
-        <section class="combos__section--izq">
+        </nav>
+    </header>
+    <main>
+        <h1 class="fondo-transparente">Packs y Combos</h1>
+        <section class="section--izq">
             <img src="../imagenes/box1.jpeg" alt="Cajita de regalo con dos cervezas, una pinta y un juego dentro" class="img--izq">
             <article class="art--izq">
                 <h2> GIFT BOX </h2>
@@ -67,7 +68,7 @@
                 <p class="precio">$800</p>
             </article>
         </section>
-        <section class="combos__section--der">
+        <section class="section--der">
             <img src="../imagenes/PackIpa.jpeg" alt="Pack de cuatro cervezas en lata estilo ipa" class="img--der">
             <article class="art--der">
                 <h2>PACK IPAS</h2>                
@@ -82,7 +83,7 @@
                 <p class="precio">$560</p>
             </article>
         </section>
-        <section class="combos__section--izq">
+        <section class="section--izq">
             <img src="../imagenes/PackRubias.jpeg" alt="pack de cuatro latas de cervezas rubias" class="img--izq">
             <article class="art--izq">
                 <h2>PACK RUBIAS</h2>
@@ -97,7 +98,7 @@
                 <p class="precio">$560</p>
             </article>
         </section>
-        <section class="combos__section--der">
+        <section class="section--der">
             <img src="../imagenes/PackRojas.jpg" alt="pack de cuatro latas de cerveza estilo roja" class="img--der">
             <article class="art--der">
                 <h2>PACK ROJAS</h2>
@@ -113,8 +114,7 @@
                 <p class="precio">$560</p>
             </article>
         </section>
-    </div>
-    <aside></aside>
+    </main>
     <footer>
         <ul>
             <li><a href="../index.html">Inicio</a></li>  
@@ -130,10 +130,9 @@
            <li>Efectivo</li>
         </ul> 
         <ul class="footer__info">
-            <li>Envíos en CABA</li>
+            <li><img src="../imagenes/icono_envio.png" alt="Icono de un camioncito" class="img__iconos"> Envíos en CABA</li>
             <li>.</li>
-            <li>.</li>
-            <li>Instagram @Bardelatas</li>
+            <li><img src="../imagenes/icon_ig.png" alt="Icono de instagram" class="img__iconos"> Instagram @Bardelatas</li>
         </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

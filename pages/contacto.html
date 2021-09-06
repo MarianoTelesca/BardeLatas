@@ -16,9 +16,9 @@
     <meta name="description" content="Contactate con nosotros ante cualquier duda o pedido!">
     <meta name="keywords" content="Formulario, Contacto, Contactanos, Mensaje">
 </head>
-<body>
-  <header></header>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<body class="container-fluid">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,9 +50,11 @@
         </form>
       </div>
     </div>
-  </nav>
-  <h1>CONTACTANOS!</h1>
-  <form action="" enctype="" method="" class="form" autocomplete="off">
+    </nav>
+  </header>
+  <main>
+    <h1>CONTACTANOS!</h1>
+    <form action="" enctype="" method="" class="form" autocomplete="off">
       <input type="text" name="nombre" class="form__input" id="nombre" placeholder="Nombre" required>  
       <input type="text" name="apellido" class="form__input" id="apellido" placeholder="Apellido" required>
       <input type="email" name="email" class="form__input" id="email" placeholder="Email" required>
@@ -64,9 +66,8 @@
       <textarea name="Consulta" class="form__consulta" placeholder="Escriba su consulta aquí" required></textarea><br>
       <button type="submit" class="form__boton" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
       <button type="reset" class="form__boton">Reset</button>
-  </form>
-  <section></section>
-  <aside></aside>
+    </form>
+  </main>
   <footer>
     <ul>
       <li><a href="../index.html">Inicio</a></li>  
@@ -82,10 +83,9 @@
       <li>Efectivo</li>
     </ul> 
     <ul class="footer__info">
-      <li>Envíos en CABA</li>
+      <li><img src="../imagenes/icono_envio.png" alt="Icono de un camioncito" class="img__iconos"> Envíos en CABA</li>
       <li>.</li>
-      <li>.</li>
-      <li>Instagram @Bardelatas</li>
+      <li><img src="../imagenes/icon_ig.png" alt="Icono de instagram" class="img__iconos"> Instagram @Bardelatas</li>
     </ul>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

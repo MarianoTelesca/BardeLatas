@@ -1,4 +1,5 @@
 @media (max-width: 480px) {
+    //HEADER
     .header {
         position: relative;
         top: 0%;
@@ -16,59 +17,24 @@
         @include medida(80vw, 90vh);
         border-image: round;
     }
-    .index__section--izq {
+
+    //SECCIONES
+    .section--izq {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "foto" "article";
     }
-    .index__img--izq {
+    .img--izq {
         @include medida(85vw, 35vh);
     }    
-    .index__section--der {
+    .section--der {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "art" "foti";
     }
-    .index__img--der {
-        @include medida(85vw, 35vh);
-    }
-
-    //PACKS Y COMBOS
-    .combos__section--izq {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "foto" "article";
-    }
-    .art--izq {
-        grid-area: article;
-        text-align: center;
-        justify-content: stretch;
-        align-items: center;
-        padding: 1em;
-    }
-    .img--izq {
-        justify-content: center;
-        grid-area: foto;
-        @include medida(85vw, 35vh);
-    }
-    .combos__section--der {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "foti" "art";
-    }
-    .art--der {
-        grid-area: art;
-        text-align: center;
-        justify-content: stretch;
-        align-items: center;
-        padding: 1em;
-    }
     .img--der {
-        grid-area: foti;
         @include medida(85vw, 35vh);
     }
 

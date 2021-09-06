@@ -1,4 +1,4 @@
-.combos__section--izq {
+.section--izq {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1;
@@ -18,10 +18,13 @@
     @include medida(45vw, 75vh);
 }
 
-.combos__section--der {
-    @extend .combos__section--izq;
+.section--der {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
     grid-template-areas: "art foti";
-    background-color: rgb(255, 204, 77);
+    background-color: rgb(255, 221, 137);
+    @include separacion(0, 1em);
 }
 .art--der {
     grid-area: art;
@@ -36,11 +39,11 @@
 }
 
 
-.combos ul {
+.section--izq ul, .section--der ul {
     list-style: none;
     text-align: center;
 }
-.combos h2 {
+.section h2, .section--izq h2 {
     font-size: 2em;
 }
 .precio {

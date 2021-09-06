@@ -5,6 +5,7 @@
     grid-template-areas: "texto404 img404" 
                          "texto404 img404";
     justify-content: space-around;
+    @include separacion(1em, 1em);
 }
 
 #texto404 {
