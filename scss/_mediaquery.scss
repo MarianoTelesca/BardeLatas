@@ -25,6 +25,9 @@
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "foto" "article";
     }
+    .art--izq {
+        padding: 0.5em;
+    }
     .img--izq {
         @include medida(85vw, 35vh);
     }    
@@ -32,7 +35,10 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "art" "foti";
+        grid-template-areas: "foti" "art";
+    }
+    .art--der {
+        padding: 0.5em;
     }
     .img--der {
         @include medida(85vw, 35vh);
@@ -46,22 +52,22 @@
         background: none;
         display: grid;
         grid-template-columns: 1 100vw;
-        grid-template-rows: 30vh 70vh;
+        grid-template-rows: 40vh 80vh;
         grid-template-areas: "secQs" "asideQs";
     }
     #nosotros__section {
-        @include medida(90vw, 25vh);
-        overflow: auto;
+        @include medida(90vw, 35vh);
+        overflow: none;
         grid-area: secQs;
     }
     #iframeHomero {
         display: none
     }
     #nosotros__aside {
-        @include medida(90vw, 70vh);
+        @include medida(90vw, 75vh);
         display: inline-block;
         margin: 0.5em;
-        overflow: auto;
+        overflow: none;
     }
     .aside__img {
         @include medida(70vw, 50vh);

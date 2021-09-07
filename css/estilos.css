@@ -265,6 +265,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "foto" "article"; }
+  .art--izq {
+    padding: 0.5em; }
   .img--izq {
     width: 85vw;
     height: 35vh; }
@@ -272,7 +274,9 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "art" "foti"; }
+    grid-template-areas: "foti" "art"; }
+  .art--der {
+    padding: 0.5em; }
   .img--der {
     width: 85vw;
     height: 35vh; }
@@ -283,21 +287,21 @@ footer {
     background: none;
     display: grid;
     grid-template-columns: 1 100vw;
-    grid-template-rows: 30vh 70vh;
+    grid-template-rows: 40vh 80vh;
     grid-template-areas: "secQs" "asideQs"; }
   #nosotros__section {
     width: 90vw;
-    height: 25vh;
-    overflow: auto;
+    height: 35vh;
+    overflow: none;
     grid-area: secQs; }
   #iframeHomero {
     display: none; }
   #nosotros__aside {
     width: 90vw;
-    height: 70vh;
+    height: 75vh;
     display: inline-block;
     margin: 0.5em;
-    overflow: auto; }
+    overflow: none; }
   .aside__img {
     width: 70vw;
     height: 50vh; }
