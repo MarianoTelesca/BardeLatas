@@ -13,10 +13,10 @@
     .header__logo {
         @include medida(40vw, 20vh);
     }
-    .carrusel__imagen {
-        @include medida(80vw, 90vh);
-        border-image: round;
-    }
+    // .carrusel__imagen {
+    //     @include medida(80vw, 90vh);
+    //     border-image: round;
+    // }
 
     //SECCIONES
     .section--izq {
@@ -94,9 +94,9 @@
     .header__logo {
         @include medida(10vw, 10vh);
     }   
-    .carrusel__imagen {
-        @include medida(40vw, 50vh);
-    }
+    // .carrusel__imagen {
+    //     @include medida(40vw, 50vh);
+    // }
     #nosotros__logo {
         @include medida(10vw, 10vh);
     }
