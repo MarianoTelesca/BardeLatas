@@ -15,7 +15,7 @@
 }
 .img--izq {
     grid-area: foto;
-    @include medida(45vw, 75vh);
+    @include medida(45vw, 65vh);
 }
 
 .section--der {
@@ -35,7 +35,7 @@
 }
 .img--der {
     grid-area: foti;
-    @include medida(45vw, 75vh);
+    @include medida(45vw, 65vh);
 }
 
 
@@ -49,4 +49,10 @@
 .precio {
     font-size: 1.5em;
     align-content: end;
+}
+
+.section__article--font {
+    color: black;
+    font-family: 'Dosis', sans-serif;
+    word-spacing: 1.7;
 }

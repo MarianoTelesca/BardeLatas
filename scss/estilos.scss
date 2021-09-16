@@ -6,7 +6,6 @@
     margin: $margen;
     padding: $padding;
 }
-
 @import "colores.scss";
 
 * {
@@ -31,43 +30,9 @@ h1 {
     text-align: center;
     margin: 1.5rem;
 }
-.section__article--font {
-    color: black;
-    font-family: 'Dosis', sans-serif;
-    word-spacing: 1.7;
-}
+
 .fondoNone {
     background: none;
-}
-
-/*Footer*/
-footer {
-    @include medida(100%, 15vh);
-    background:rgb(255, 221, 137);
-    text-align: center;
-    margin-top: 0.5em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1 20vh;
-    grid-template-areas: "linkeados fdp info";
-    position: relative;
-    left: 0;
-    bottom: 0;
-    a, ul {
-        background: none;
-        text-decoration: none;
-        color: black;
-        grid-area: linkeados;
-        font-size: small;
-        font-family: 'Caveat', cursive;
-        list-style: none; 
-        font-size: 0.8em;   }
-}
-.footer__pago {
-    grid-area: fdp;
-}
-.footer__info {
-    grid-area: info;
 }
 
 @import "index.scss";
@@ -76,3 +41,4 @@ footer {
 @import "contacto.scss";
 @import "mediaquery.scss";
 @import "404.scss";
+@import "footer.scss";
