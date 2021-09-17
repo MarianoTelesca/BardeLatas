@@ -13,7 +13,7 @@
     grid-area: secQs;
 }
 #iframeHomero {
-    @include medida(80%, 60vh);
+    @include medida(55vw, 50vh);
 }
 #nosotros__aside {
     @include medida(30vw, 100vh);
